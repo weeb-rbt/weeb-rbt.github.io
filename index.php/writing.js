@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded',function(event){
-    var dataText = [".", "..", "...", ".",];
+    var dataText = ["we", "wee", "weeb", "w",];
     
     function typeWriter(text, i, fnCallback) {
       if (i < (text.length)) {
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded',function(event){
      function StartTextAnimation(i) {
        if (typeof dataText[i] == 'undefined'){
           setTimeout(function() {
-            StartTextAnimation(.);
+            StartTextAnimation(w);
           }, 1000);
        }
       if (i < dataText[i].length) {
