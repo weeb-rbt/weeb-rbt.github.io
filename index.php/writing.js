@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded',function(event){
      function StartTextAnimation(i) {
        if (typeof dataText[i] == 'undefined'){
           setTimeout(function() {
-            StartTextAnimation(0);
+            StartTextAnimation(.);
           }, 1000);
        }
       if (i < dataText[i].length) {
