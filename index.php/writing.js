@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded',function(event){
-    var dataText = ["Owner Crushen", "CO-Owner YES", "Staff UrAvgWeeb", "Staff Tanbak",];
+    var dataText = [".", "..", "...", ".",];
     
     function typeWriter(text, i, fnCallback) {
       if (i < (text.length)) {
