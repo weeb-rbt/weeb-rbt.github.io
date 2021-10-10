@@ -1,0 +1,127 @@
+body {
+	cursor: url(../source/cursor.cur), auto !important;
+	background: #000000;
+	color: #fff;
+ 	overflow: hidden;
+ 	font-family: monospace;
+ 	text-shadow: 0px 0px 10px #000000;
+}
+
+pre {
+	font-size: 100px;
+	letter-spacing: 20px;
+	font-family: "Delight Crush Display - Personal";
+	text-shadow: -2px 0px red, 2px 0px #00bbff, 1px 2px green;
+	animation-name: intro;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+}
+
+.content_nav li a::after{
+
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform-origin: right;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 0.5s;
+
+}
+
+@font-face {
+	font-family: "Delight Crush Display - Personal";
+	src: url(../source/font.ttf);
+}
+
+#crushen {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+   text-align: center;
+}
+
+#writing {
+    position: absolute;
+    left: 50%;
+    top: 52%;
+    transform: translate(-50%, -50%);
+   text-align: center;
+}
+
+#song {
+	position: absolute;
+	left: 50%;
+	top: 97%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 16px;
+}
+
+audio {
+	position: absolute;
+	left: 50%;
+	top: 93%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 300px;
+	height: 30px;
+	color: white;
+}
+
+.back-video{
+    position: absolute;
+ 	top: 50%;
+ 	left: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -100;
+	animation-name: back-video;
+	animation-duration: 3s;
+	animation-direction: alternate-reverse;
+	animation-iteration-count: infinite;
+}
+@media(min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+
+}
+@media(max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+
+}
+@keyframes .back-video {
+	0% {
+		width: 100%;
+	}
+	100% {
+		width: 110%;
+	}
+}
+
+#links {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+   text-align: center;
+}
+
+#links2 {
+   position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+   text-align: center;
+   font-size: 16px;
+}
